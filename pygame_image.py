@@ -27,19 +27,18 @@ def main():
 
         screen.blit(bg_img, [-y, 0])
         screen.blit(pg.transform.flip(bg_img, True, False), [1600-y, 0])
-        #screen.blit(pg.transform.flip(bg_img, True, False), [-y, 0])
         screen.blit(bg_img, [3200-y, 0])
 
         
         screen.blit(kk_images[x],[300, 200])
 
-        if kk_t % 20 == 0: 
+        if kk_t % 50 == 0: 
             x += 1
         
 
         pg.display.update()
         tmr += 1        
-        clock.tick(600)
+        clock.tick(100)
         y += 1
         if y == 3200:
            y = 0
