@@ -12,6 +12,8 @@ def main():
 
     kk_image = pg.image.load("ex01/fig/3.png")
     kk_image = pg.transform.flip(kk_image, True, False)
+    kk_imagelist = [kk_image,pg.transform.rotate(kk_image, 10)]
+
 
     while True:
         for event in pg.event.get():
